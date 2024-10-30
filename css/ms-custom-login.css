@@ -1,0 +1,392 @@
+@charset "UTF-8";
+
+/* ====================================
+Options Style
+
+1.0 - Links
+1.1 - clearfix
+2.0 - form
+2.1 - submit-button
+2.2 - option box
+3.0 - table
+4.0 - image media-uploader
+9.0 - CodeMirror
+9.1 - thickbox (preview)
+9.2 - tab panel (jquery ui tabs)
+==================================== */
+
+/* ------------------------------------
+1.0 - base style
+------------------------------------ */
+
+#ms-custom-login a {
+	outline: none;
+	text-decoration: none;
+}
+
+#ms-custom-login p + input,
+#ms-custom-login p + .color-picker,
+#ms-custom-login p + select {
+	margin-top: 5px;
+}
+
+#ms-custom-login h2 {
+	margin-bottom: 10px;
+}
+
+#ms-custom-login .center {
+	text-align: center;
+}
+
+#ms-custom-login img {
+	border: solid 1px #ccc;
+}
+
+#ms-custom-login img.w-150 {
+	max-width: 150px;
+	margin-bottom: 5px;
+}
+
+#ms-custom-login .example {
+	color: #999;
+	font-size: 0.9em;
+}
+
+#ms-custom-login .right-space {
+	padding-right: 3em;
+}
+
+#ms-custom-login .right-space:last-child {
+	padding-right: 0;
+}
+
+/* ------------------------------------
+1.1 - clearfix
+------------------------------------ */
+
+#ms-custom-login .clearfix:after {
+	clear: both;
+	content: "";
+	display: block;
+}
+
+/* ------------------------------------
+2.0 - form
+------------------------------------ */
+
+#ms-custom-login .radio-button label {
+	padding-right: 3em;
+}
+
+#ms-custom-login td>img {
+	max-height: 200px;
+	max-width: 290px;
+}
+
+@media (min-width: 641px) {
+	#ms-custom-login td>img {
+		max-height: 250px;
+		max-width: 320px;
+	}
+}
+
+/* checkbox */
+#ms-custom-login .checkbox img {
+	background: #ccc;
+	border: solid 2px #fff;
+	max-width: 150px;
+	padding: 1px;
+}
+
+#ms-custom-login .checkbox input[type="checkbox"]:checked + img {
+	border-color: #ccc;
+}
+
+#ms-custom-login .block .checkbox {
+	text-align: center;
+}
+
+#ms-custom-login .block .checkbox input {
+	display: none;
+}
+
+#ms-custom-login .block .checkbox img {
+	display: block;
+	margin: 0 auto 10px;
+}
+
+/* ------------------------------------
+2.1 - submit-button
+------------------------------------ */
+
+#ms-custom-login #submit-button p {
+	float: left;
+	margin: 10px 20px 0 0;
+	padding: 0;
+}
+
+#ms-custom-login #submit-button p:last-child {
+	float: right;
+	margin-right: 0;
+}
+
+/* reset button */
+#ms-custom-login #submit-button #reset {
+	background: #999;
+	border-color: #666;
+	-webkit-box-shadow: inset 0 1px 0 #aaa, 0 1px 0 rgba(0, 0, 0, .15);
+	box-shadow: inset 0 1px 0 #aaa, 0 1px 0 rgba(0, 0, 0, .15);
+	color: #fff;
+}
+
+#ms-custom-login #submit-button #reset:hover {
+	background: #777;
+}
+
+/* preview button */
+#ms-custom-login #preview a {
+	background: #fff;
+}
+
+#ms-custom-login #preview a:hover {
+	background: #eee;
+}
+
+/* ------------------------------------
+2.2 - option box
+------------------------------------ */
+
+#ms-custom-login .option-box {
+	background: #fff;
+	border: solid 1px #e5e5e5;
+	-webkit-box-shadow: 0px 1px 1px rgba(102, 102, 102, 0.1);
+	box-shadow: 0px 1px 1px rgba(102, 102, 102, 0.1);
+	margin-bottom: 20px;
+}
+
+#ms-custom-login .option-box h3 {
+	border-bottom: solid 1px #e5e5e5;
+	cursor: pointer;
+	font-size: 1.2em;
+	margin: 0;
+	padding: 12px 15px;
+}
+
+#ms-custom-login .option-box h3:after {
+	color: #aaa;
+	content: "\f142";
+	float: right;
+	font-family: "dashicons";
+}
+
+#ms-custom-login .close-box h3:after {
+	content: "\f140";
+}
+
+#ms-custom-login .option-box .inside {
+	padding: 0 15px 5px;
+}
+
+#ms-custom-login #submit-button {
+	margin-top: -10px;
+}
+
+/* ------------------------------------
+3.0 - table
+------------------------------------ */
+
+#ms-custom-login table {
+	border-collapse: collapse;
+}
+
+#ms-custom-login table td {
+	padding: 17px 15px 17px 0;
+}
+
+#ms-custom-login table.nest td {
+	padding: 0;
+}
+
+@media (min-width: 641px) {
+	#ms-custom-login table.nest td {
+		padding-right: 3em;
+	}
+
+	#ms-custom-login table.nest td:last-child {
+		padding-right: 0;
+	}
+}
+
+#ms-custom-login table.inline div,
+#ms-custom-login table.inline p {
+	display: inline;
+}
+
+/* ------------------------------------
+4.0 - image media-uploader
+------------------------------------ */
+
+#ms-custom-login .media-upload .remove-open td.upload-button,
+#ms-custom-login .media-upload .upload-open td.remove-button {
+	display: none;
+}
+
+#ms-custom-login .media-upload .upload-preview {
+	padding-right: 0;
+}
+
+#ms-custom-login .media-upload .remove-button {
+	padding-left: 15px;
+}
+
+#ms-custom-login .media-upload table img {
+	background: #eee;
+	border: solid 1px #ddd;
+}
+
+/* media-children */
+#ms-custom-login .media-children.children-hide {
+	display: none;
+}
+
+/* ------------------------------------
+8.0 - Option desc-option
+------------------------------------ */
+
+#ms-custom-login  #notice-option.update-nag {
+	display: block;
+	margin: 20px 0 0;
+}
+
+#ms-custom-login  #notice-option input {
+	display: none;
+}
+
+#ms-custom-login  #notice-option .notice-title,
+#ms-custom-login  #notice-option span {
+	color: #555;
+	font-size: 1em;
+	font-weight: bold;
+}
+
+#ms-custom-login  #notice-option span {
+	color: #0074a2;
+	cursor: pointer;
+}
+
+/* ------------------------------------
+9.0 - CodeMirror
+------------------------------------ */
+
+#ms-custom-login .CodeMirror {
+	border: solid 1px #ddd;
+	font-family: 'Consolas', 'Monaco', monospace;
+	height: 800px;
+	line-height: 1.2;
+	width: 100%;
+}
+
+/* ------------------------------------
+9.1 - thickbox (preview)
+------------------------------------ */
+
+#ms-custom-login #preview-popup {
+	display: none;
+}
+
+#ms-custom-login #preview-container iframe {
+	height: 650px;
+	width: 100%;
+}
+
+/* ------------------------------------
+9.2 - tab panel (jquery ui tabs)
+------------------------------------ */
+
+#ms-custom-login .ui-tabs {
+	position: relative;
+}
+
+#ms-custom-login .ui-tabs .ui-tabs-nav {
+	margin: 0;
+	padding: 0;
+}
+
+#ms-custom-login .ui-tabs .ui-tabs-nav li {
+	background: #eee;
+	border: solid 1px #ccc;
+	border-bottom-width: 0;
+	border-radius: 5px 5px 0 0;
+	float: left;
+	list-style: none;
+	margin: 0 3px 0 0;
+	position: relative;
+	top: 0;
+	white-space: nowrap;
+}
+
+#ms-custom-login .ui-tabs .ui-tabs-nav li h3 {
+	margin: 0;
+}
+
+#ms-custom-login .ui-tabs .ui-tabs-nav .ui-tabs-anchor {
+	color: #666;
+	display: block;
+	font-size: 0.9em;
+	font-weight: normal;
+	height: 40px;
+	line-height: 40px;
+	padding: 0 15px;
+	text-decoration: none;
+}
+
+#ms-custom-login .ui-tabs .ui-tabs-nav li.ui-tabs-active {
+	background: #fff;
+	margin-bottom: -1px;
+	padding-bottom: 1px;
+}
+
+#ms-custom-login .ui-tabs .ui-tabs-nav li:hover {
+	background: #aaa;
+	border-color: #aaa;
+}
+
+#ms-custom-login .ui-tabs .ui-tabs-nav li:hover .ui-tabs-anchor {
+	color: #fff;
+}
+
+#ms-custom-login .ui-tabs .ui-tabs-nav li.ui-tabs-active .ui-tabs-anchor {
+	cursor: default;
+}
+
+#ms-custom-login .ui-tabs-collapsible .ui-tabs-nav li.ui-tabs-active .ui-tabs-anchor {
+	cursor: pointer;
+}
+
+#ms-custom-login .ui-tabs .ui-tabs-panel {
+	background: #fff;
+	border: solid 1px #ccc;
+	border-radius: 0 5px 5px 5px;
+	display: block;
+	margin-bottom: 20px;
+}
+
+@media (max-width: 640px) {
+	#ms-custom-login .ui-tabs {
+		margin-top: 20px;
+	}
+
+	#ms-custom-login .ui-tabs .ui-tabs-panel {
+		padding: 20px 10px;
+	}
+}
+
+@media (min-width: 641px) {
+	#ms-custom-login .ui-tabs {
+		margin-top: 35px;
+	}
+
+	#ms-custom-login .ui-tabs .ui-tabs-panel {
+		padding: 30px 20px 40px;
+	}
+}
